@@ -1,5 +1,6 @@
 server:
   port: 9002
+#  context-path: /client
 
 spring:
   application:
@@ -11,6 +12,10 @@ eureka:
   client:
     service-url:
       defaultZone: http://peer1:8761/eureka,http://peer2:8762/eureka
+
+management:
+  security:
+    enabled: false
 
 server-demo:
   ribbon:
